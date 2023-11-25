@@ -1,0 +1,14 @@
+{
+    "name": "hide-yaho-news-by-keyword",
+    "description": "Hide Yahoo News by keyword",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": ["scripting", "storage"],
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": ["https://news.yahoo.co.jp/*"],
+            "js": ["script.js"]
+        }
+    ]
+}

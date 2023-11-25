@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+
+        <style>
+            label {
+                font-size: 20px;
+            }
+
+            #keywords {
+                height: 20px;
+                width: calc(100% - 40px);
+                margin: 10px;
+                padding: 10px 10px;
+                border-radius: 4px;
+                border: none;
+                box-shadow: 0 0 0 1px #ccc inset;
+                appearance: none;
+            }
+
+            #keywords:focus {
+                outline: 0;
+                box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                margin: 10px;
+                height: 40px;
+                width: calc(100% - 20px);
+                background-color: cadetblue;
+                border-radius: 4px;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Options</h1>
+        <form id="form">
+            <label for="keywords">Input Keywords</label><br>
+            <p>複数キーワードを指定する場合は「,」区切りで入力してください。</p>
+            <input type="text" id="keywords" name="keywords"><br>
+            <input type="submit" value="設定">
+        </form>
+
+        <script src="options.js"></script>
+    </body>
+</html>
